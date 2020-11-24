@@ -38,7 +38,7 @@ import mimetypes
 import requests
 from requests.auth import AuthBase
 try:
-    from jupyter_collab_storage import oauth_token_handler
+    from clb_nb_utils import oauth as oauth_token_handler
     have_collab_token_handler = True
 except ImportError:
     have_collab_token_handler = False
